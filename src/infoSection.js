@@ -17,7 +17,7 @@ export default class InfoSection extends Component {
                     <div className="row justify-content-center text-center mb-5 pb-5">
                         <div className="col-md-8">
                             <img src="images/logo-transparent.png" className="infoimg" alt="logo"/>
-                            <h2>Crypto Twitter's very own fully upfront, completely honest Pyramid Scheme™ </h2>
+                            <h2>一个100%诚实可靠的金字塔计划™</h2>
                         </div>
                     </div>
                     

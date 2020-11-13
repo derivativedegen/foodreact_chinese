@@ -20,7 +20,7 @@ export const Hours = (props) => {
               {props.val}
           </span>
           <span className="span span--block text--center">
-              Hours
+            小时
           </span>
       </div>
     )
@@ -33,7 +33,7 @@ export const Seconds = (props) => {
               {props.val}
           </span>
           <span className="span span--block text--center">
-              Seconds
+            秒钟
           </span>
       </div>
     )
@@ -46,7 +46,7 @@ export const Seconds = (props) => {
               {props.val}
           </span>
           <span className="span span--block text--center">
-              Minutes
+            分钟
           </span>
       </div>
     )

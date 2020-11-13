@@ -42,7 +42,7 @@ export default class Stats extends Component {
         return (
             <div className="header-container">
                 <div className="row d-flex justify-content-center">
-                  <h2><b>Foodture of Finance</b></h2>
+                  <h2><b>金融的未来食粮</b></h2>
                 </div>
 
                 <div className="container">
@@ -61,15 +61,15 @@ export default class Stats extends Component {
                     </div>
 
                     <div className="row justify-content-center">
-                        <TokenLink link={this.state.buylink} text={"Buy " + this.state.token} />
-                        <TokenLink link={this.state.chartlink} text={this.state.token + " Chart"} />
+                        <TokenLink link={this.state.buylink} text={"买入 " + this.state.token} />
+                        <TokenLink link={this.state.chartlink} text={this.state.token + " 图表"} />
                     </div>
 
                     <div id="countdown">
                         <hr className="hrwhite" />
 
                         <div className="row justify-content-center">
-                            <h4>Next fToken Rebase</h4>
+                            <h4>fToken下次重置时间</h4>
                         </div>
                         <Countdown target={this.state.nextRebase} />
 

@@ -21,7 +21,7 @@ export default class HeaderVideo extends React.Component {
                     <div className="embed-responsive embed-responsive-16by9">
                         <iframe 
                             className="embed-responsive-item header-vid"
-                            src="https://www.youtube.com/embed/PfhIERTpTh4" 
+                            src="https://www.youtube.com/embed/TQclH43z5Cw" 
                             frameBorder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowFullScreen>
@@ -30,16 +30,16 @@ export default class HeaderVideo extends React.Component {
                 </div>
 
                 <div className="row justify-content-center">
-                    <BuyNavButton handleClick={this.handleClick} pageName={'stats'} text="Join the Pyramid" />
+                    <BuyNavButton handleClick={this.handleClick} pageName={'stats'} text="如何购买" />
                 </div>
 
                     {this.props.mobile ? (
                         <div className="row justify-content-center">
-                            <BuyNavButton handleClick={this.handleClick} pageName={'about'} text="About"/>
-                            <BuyNavButton handleClick={this.handleClick} pageName={'team'} text="Team"/>
+                            <BuyNavButton handleClick={this.handleClick} pageName={'about'} text="关于"/>
+                            <BuyNavButton handleClick={this.handleClick} pageName={'team'} text="团队"/>
                             <a href="https://foodpyramid.medium.com/" target="_blank">
                                 <button className="buyboxnav" style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold'}}>
-                                    Blog
+                                    博客
                                 </button>
                             </a>
                         </div>
