@@ -15,7 +15,7 @@ export const aboutData = [
         image: "images/bullet-3.png"
     },
     {
-        heading: "质押挖矿的奖励——才不是垃圾币",
+        heading: "质押挖矿的奖励—才不是垃圾币",
         details: "稳定币，ETH，BTC，DeFi蓝筹股，不像其他所有的质押挖矿币，我们的挖矿奖励都有长期的价值。",
         image: "images/bullet-4.png"
     },
