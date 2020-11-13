@@ -33,7 +33,7 @@ export const tokenData = [
                 stat: '100,000'
             }, 
             {
-                heading: 'FOOD 流通',
+                heading: 'FOOD 流通量。',
                 stat: '18,750'
             }, 
             {
