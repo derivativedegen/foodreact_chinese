@@ -139,7 +139,7 @@ export const tokenData = [
         statboxes: [
             {
                 heading: 'fUSDC 锚定价格',
-                stat: '$4.84'
+                stat: '$5.44'
             }, 
             {
                 heading: 'fUSDC 重定基底',
