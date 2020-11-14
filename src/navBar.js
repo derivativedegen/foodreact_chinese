@@ -1,7 +1,7 @@
 import React from 'react';
 import TitleLogo from './titleLogo';
 import BuyNavButton from './buyNavButton';
-import { siteLinks, nav } from './siteData';
+import { nav } from './siteData';
 
 export default class NavBar extends React.Component {
     constructor(props) {
@@ -42,7 +42,7 @@ export default class NavBar extends React.Component {
                         <li className="nav-item" key="nav-02"><a href="" className="nav-link" id="about" onClick={this.handleClick}>{nav.about}</a></li>
                         <li className="nav-item" key="nav-03"><a href="" className="nav-link" id="stats" onClick={this.handleClick}>{nav.stats}</a></li>
                         <li className="nav-item" key="nav-04"><a href="" className="nav-link" id="team" onClick={this.handleClick}>{nav.team}</a></li>
-                        <li className="nav-item" key="nav-05"><a href={siteLinks.blog} className="nav-link" target="_blank" rel="noreferrer">{nav.blog}</a></li>
+                        <li className="nav-item" key="nav-05"><a href="https://medium.com/@FoodPyramid" className="nav-link" target="_blank" rel="noreferrer">{nav.blog}</a></li>
                     </ul>
                     </div>
                 </div>
