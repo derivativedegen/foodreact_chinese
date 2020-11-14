@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { teamData } from './siteData';
+import { teamData, headings } from './siteData';
 import TeamMember from './teamMember';
+import SocialButtons from './socialButtons';
+
 
 export default class Team extends Component {
     constructor(props) {
@@ -14,7 +16,7 @@ export default class Team extends Component {
             <div className="header-container justify-content-center">
                 <div className="row justify-content-center mb-5 pb-5">
                     <div className="col-md-7 text-center heading-section">
-                        <h3><b>Meet the legendary team that's ending world hunger with $FOOD.</b></h3>
+                        <h3><b>{headings.team}</b></h3>
                     </div>
                 </div>
 
@@ -32,6 +34,8 @@ export default class Team extends Component {
                         )}
                     </div>
                 </div>
+
+                <SocialButtons />
             </div>
         )
     } 

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import BulletPoint from './bulletPoint';
 import { aboutData } from './siteData';
+import { headings } from './siteData';
+import SocialButtons from './socialButtons';
+
 
 export default class InfoSection extends Component {
     constructor(props) {
@@ -17,7 +20,7 @@ export default class InfoSection extends Component {
                     <div className="row justify-content-center text-center mb-5 pb-5">
                         <div className="col-md-8">
                             <img src="images/logo-transparent.png" className="infoimg" alt="logo"/>
-                            <h2>一个100%诚实可靠的金字塔计划™</h2>
+                            <h2>{headings.about}</h2>
                         </div>
                     </div>
                     
@@ -33,6 +36,8 @@ export default class InfoSection extends Component {
                         )}
                     </div>
                 </div>
+
+                <SocialButtons />
             </div>
         )
     }

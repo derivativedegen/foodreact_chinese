@@ -1,6 +1,7 @@
 import React from 'react';
 import BuyNavButton from './buyNavButton';
-
+import SocialButtons from './socialButtons';
+import { headings, youtubeVideos } from './siteData';
 
 export default class HeaderVideo extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ export default class HeaderVideo extends React.Component {
     handleClick(e) {
         e.preventDefault();
         const page = e.target.id;
-        this.props.onClick(page);
+        (page === 'blog' ? window.open('https://foodpyramid.medium.com/') : this.props.onClick(page));
     }
 
     render() {
@@ -20,8 +21,9 @@ export default class HeaderVideo extends React.Component {
                 <div className="row d-flex justify-content-center shadow-lg p-3 mb-5 bg-black rounded">
                     <div className="embed-responsive embed-responsive-16by9">
                         <iframe 
+                            title="Food Pyramid Trailer"
                             className="embed-responsive-item header-vid"
-                            src="https://www.youtube.com/embed/TQclH43z5Cw" 
+                            src={youtubeVideos.main} 
                             frameBorder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowFullScreen>
@@ -30,22 +32,21 @@ export default class HeaderVideo extends React.Component {
                 </div>
 
                 <div className="row justify-content-center">
-                    <BuyNavButton handleClick={this.handleClick} pageName={'stats'} text="如何购买" />
+                    <BuyNavButton handleClick={this.handleClick} pageName={'stats'} text={headings.statsButton} />
                 </div>
 
-                    {this.props.mobile ? (
-                        <div className="row justify-content-center">
-                            <BuyNavButton handleClick={this.handleClick} pageName={'about'} text="关于"/>
-                            <BuyNavButton handleClick={this.handleClick} pageName={'team'} text="团队"/>
-                            <a href="https://foodpyramid.medium.com/" target="_blank">
-                                <button className="buyboxnav" style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold'}}>
-                                    博客
-                                </button>
-                            </a>
-                        </div>
-                        ) : null
-                    }
-                    
+                {this.props.mobile ? (
+                    <div className="row justify-content-center">
+                        <BuyNavButton handleClick={this.handleClick} pageName={'about'} text={headings.aboutButton} />
+                        <BuyNavButton handleClick={this.handleClick} pageName={'team'} text={headings.teamButton} />
+                        <BuyNavButton handleClick={this.handleClick} pageName={'blog'} text={headings.blogButton} />
+                    </div>
+                    ) : null
+                }
+                
+                <div className="row justify-content-center">
+                    <SocialButtons />
+                </div>
             </div>
         )
     }

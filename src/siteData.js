@@ -123,45 +123,23 @@ export const teamData = [
     },
 ]
 
-/*
-{
-        name: 'fETH',
-        id: 2,
-        buylink: `https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0x6b951017a3212edc6b275976bfdd50969f6e1c62`,
-        chartlink: `https://beta.dex.vision/?ticker=UniswapV2:FUSDCUSDC-0x6fc30adEdD79fFB4cBB2FDbef1F779bBF3aa8d36&interval=240`,
-        statboxes: [
-            {
-                heading: 'fETH Peg',
-                stat: '$4.29'
-            }, 
-            {
-                heading: 'fETH Rebase',
-                stat: '4H Candle Close'
-            }, 
-            {
-                heading: 'fETH LP APY',
-                stat: '16,209%'   
-            }
-        ]
-    },
-    {
-        name: 'fBTC',
-        id: 3,
-        buylink: `https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0x6b951017a3212edc6b275976bfdd50969f6e1c62`,
-        chartlink: `https://beta.dex.vision/?ticker=UniswapV2:FUSDCUSDC-0x6fc30adEdD79fFB4cBB2FDbef1F779bBF3aa8d36&interval=240`,
-        statboxes: [
-            {
-                heading: 'fBTC Peg',
-                stat: '$4.29'
-            }, 
-            {
-                heading: 'fBTC Rebase',
-                stat: '4H Candle Close'
-            }, 
-            {
-                heading: 'fBTC LP APY',
-                stat: '16,209%'   
-            }
-        ]
-    }
-*/
+export const headings = {
+    siteTitle: '食物金字塔',
+    about: `一个100%诚实可靠的金字塔计划™`,
+    stats: '金融的未来食粮',
+    nextRebase: 'fToken下次重置时间',
+    team: `隆重介绍一下我们致力于靠$FOOD解决的世界饥饿问题的精英团队`,
+    hours: '小时',
+    minutes: '秒钟',
+    seconds: '分钟',
+    buy: '买入',
+    chart: '图表',
+    statsButton: '如何购买',
+    aboutButton: '关于',
+    teamButton: '团队',
+    blogButton: '博客',
+}
+
+export const youtubeVideos = {
+    main: 'https://www.youtube.com/embed/TQclH43z5Cw',
+}
