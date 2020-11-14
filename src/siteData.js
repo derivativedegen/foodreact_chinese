@@ -140,6 +140,15 @@ export const headings = {
     blogButton: '博客',
 }
 
-export const youtubeVideos = {
-    main: 'https://www.youtube.com/embed/TQclH43z5Cw',
+export const nav = {
+    home: '主页',
+    about: '关于',
+    stats: '数据',
+    team: '团队',
+    blog: '博客',
+}
+
+export const siteLinks = {
+    youtubeHeader: 'https://www.youtube.com/embed/TQclH43z5Cw',
+    blog: 'https://foodpyramid.medium.com/ftokens-深度解析旁氏经济与暴涨原则-53879879df0b',
 }
