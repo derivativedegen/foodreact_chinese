@@ -2,17 +2,14 @@ import React, { Component } from 'react';
 import TokenLink from './tokenLink';
 import StatBox from './statBox';
 import Countdown from './Countdown';
-import { headings } from './siteData';
-import { tokenData } from './tokenData';
+import { headings, tokenData } from './siteData';
 
 
 export default class FoodStats extends Component {
     constructor(props){
         super(props);
         this.state = {
-            token: tokenData[0].name,
-            buylink: tokenData[0].buylink,
-            chartlink: tokenData[0].chartlink,
+            token: tokenData[0]
         }
     }
 
@@ -26,8 +23,8 @@ export default class FoodStats extends Component {
         return(
             <div>
                 <div className="row justify-content-center">
-                    <TokenLink link={this.state.buylink} text={headings.buy + " " + this.state.token} />
-                    <TokenLink link={this.state.chartlink} text={this.state.token + " " + headings.chart} />
+                    <TokenLink link={this.state.token.buylink} text={headings.buy + " " + this.state.token.name} />
+                    <TokenLink link={this.state.token.chartlink} text={this.state.token.name + " " + headings.chart} />
                 </div>
 
                 <div id="countdown" className="justify-content-center">
@@ -40,9 +37,8 @@ export default class FoodStats extends Component {
                 </div>
 
                 <div className="row justify-content-center">
-                    <StatBox text={tokenData[0].statbox[0].heading} stat={`100,000`} />
-                    <StatBox text={tokenData[0].statbox[1].heading} stat={foodCirculating} />
-                    <StatBox text={tokenData[0].statbox[2].heading} stat={'74%'} />
+                    <StatBox text={this.state.token.statbox[0].heading} stat={foodCirculating} />
+                    <StatBox text={this.state.token.statbox[1].heading} stat={'4,795.84 USDC'} />
                 </div>
             </div>
         )

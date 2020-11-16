@@ -2,30 +2,23 @@ import React, { Component } from 'react';
 import TokenLink from './tokenLink';
 import StatBox from './statBox';
 import Countdown from './Countdown';
-import { headings } from './siteData';
-import { tokenData } from './tokenData';
+import { headings, tokenData } from './siteData';
 
 
 export default class FusdcStats extends Component {
     constructor(props){
         super(props);
         this.state = {
-            token: tokenData[1].name,
-            buylink: tokenData[1].buylink,
-            chartlink: tokenData[1].chartlink,
+            token: tokenData[1],
         }
-    }
-
-    numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     render() {
         return(
             <div>
                 <div className="row justify-content-center">
-                    <TokenLink link={this.state.buylink} text={headings.buy + " " + this.state.token} />
-                    <TokenLink link={this.state.chartlink} text={this.state.token + " " + headings.chart} />
+                    <TokenLink link={this.state.token.buylink} text={headings.buy + " " + this.state.token.name} />
+                    <TokenLink link={this.state.token.chartlink} text={this.state.token.name + " " + headings.chart} />
                 </div>
 
                 <div id="countdown" className="justify-content-center">
@@ -38,9 +31,8 @@ export default class FusdcStats extends Component {
                 </div>
 
                 <div className="row justify-content-center">
-                    <StatBox text={tokenData[1].statbox[0].heading} stat={'$' + this.props.fusdcPeg.toFixed(2)} />
-                    <StatBox text={tokenData[1].statbox[1].heading} stat={`UTC 4H Close`} />
-                    <StatBox text={tokenData[1].statbox[2].heading} stat={'16,209%'} />
+                    <StatBox text={this.state.token.statbox[0].heading} stat={this.props.fusdcPeg.toFixed(2)} />
+                    <StatBox text={this.state.token.statbox[1].heading} stat={'2,534.06 USDC'} />
                 </div>
             </div>
         )
