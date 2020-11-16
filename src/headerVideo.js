@@ -32,6 +32,7 @@ export default class HeaderVideo extends React.Component {
                     </div>
                 </div>
 
+                
                 <div className="row justify-content-center">
                     <BuyNavButton handleClick={this.handleClick} pageName={'stats'} text={headings.statsButton} />
                 </div>

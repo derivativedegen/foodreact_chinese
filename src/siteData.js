@@ -105,11 +105,14 @@ export const nav = {
     blog: '博客',
 }
 
+export const navLinks = ['home', 'about', 'stats', 'team']
+
 export const siteLinks = {
     youtubeHeader: 'https://www.youtube.com/embed/TQclH43z5Cw',
     blog: 'https://foodpyramid.medium.com/ftokens-深度解析旁氏经济与暴涨原则-53879879df0b',
 }
 
+/* COMBINE FROM TOKENDATA.JS AND REFLECT CHANGES ACROSS IMPORTS
 export const tokenData = [
     {
         name: 'FOOD',
@@ -122,7 +125,7 @@ export const tokenData = [
                 stat: '100,000'
             }, 
             {
-                heading: 'FOOD 流通量。',
+                heading: 'FOOD 流通量',
                 stat: '18,750'
             }, 
             {
@@ -152,3 +155,4 @@ export const tokenData = [
         ]
     },
 ];
+*/
