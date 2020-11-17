@@ -121,7 +121,7 @@ export const tokenData = [
                 heading: '流通量',
             }, 
             {
-                heading: 'Rewards Paid',
+                heading: '已支付奖励',
             }
         ]
     },
