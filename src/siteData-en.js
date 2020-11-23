@@ -122,12 +122,29 @@ export const tokenData = [
                 heading: 'FOOD/ETH',
             },
             {
+                heading: 'FOOD/USDC',
+            },
+            {
+                heading: 'Current APY'
+            },
+            {
+                heading: 'Current Rewards',
+            },
+            {
                 heading: 'Circulating Supply',
             },
             {
-                heading: 'Rewards Paid',
-                stat: '4,795.84 USDC',
-            }
+                heading: 'Total Rewards',
+                stat: '19.20875 ETH', // 4,795.84 USDC First Dist / $577 Current ETH PRice
+            },
+            {
+                heading: 'Latest Rewards',
+                stat: '10.90 ETH',
+            },
+            {
+                heading: 'Latest APY',
+                stat: '11,773.87 %',
+            },
         ]
     },
     {
@@ -140,8 +157,22 @@ export const tokenData = [
                 heading: 'Price Peg',
             },
             {
-                heading: 'Rewards Paid',
-                stat: '2,534.06 USDC',
+                heading: 'Total Rewards',
+                stat: '1,064.36 FOOD', // 7,535.85 USDC First Dist / $11.57 Current FOOD
+            },
+            {
+                heading: 'Latest Rewards',
+                stat: '413.03 FOOD',
+            },
+            {
+                heading: 'Latest APY',
+                stat: '870.28 %',
+            },
+            {
+                heading: 'Current Rewards',
+            },
+            {
+                heading: 'Current APY'
             },
         ]
     },
@@ -149,14 +180,29 @@ export const tokenData = [
         name: 'fETH',
         id: 2,
         buylink: `https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x0a8d64E729F613B3FF58ED4A345459af4E7dc7FE`,
-        chartlink: `https://www.dextools.io/app/uniswap/pair-explorer/0x34C4F59FeD483E540770991a6713E4e7f881e27E`,
+        chartlink: `https://chartex.pro/?symbol=UNISWAP:FETH.7DC7FE/WETH&theme=Dark`,
+        chartlink2: `https://www.dextools.io/app/uniswap/pair-explorer/0x34C4F59FeD483E540770991a6713E4e7f881e27E`,
         statbox: [
             {
                 heading: 'Price Peg',
             },
             {
-                heading: 'Rewards Paid',
-                stat: 'Coming Soon',
+                heading: 'Current APY'
+            },
+            {
+                heading: 'Current Rewards',
+            },
+            {
+                heading: 'Total Rewards',
+                stat: '806.49 FOOD',
+            },
+            {
+                heading: `Latest APY`,
+                stat: '10,481 %',
+            },
+            {
+                heading: `Latest Rewards`,
+                stat: '806.49 FOOD',
             },
         ]
     }

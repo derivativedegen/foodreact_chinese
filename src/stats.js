@@ -30,15 +30,25 @@ export default class Stats extends Component {
                 return <FoodStats 
                         nextRebase={this.state.nextRebase} 
                         foodCirculating={this.props.foodCirculating}
-                        foodEthPrice={this.props.foodEthPrice} />
+                        foodRewards={this.props.foodRewards}
+                        foodEthPrice={this.props.foodEthPrice} 
+                        foodUsdcPrice={this.props.foodUsdcPrice}
+                        foodBalanceFoodEthLP={this.props.foodBalanceFoodEthLP}
+                        ethBalanceFoodEthLP={this.props.ethBalanceFoodEthLP} />
             case 1:
                 return <FusdcStats
                         nextRebase={this.state.nextRebase}
-                        fusdcPeg={this.props.fusdcPeg} />
+                        rewardsFusdc={this.props.rewardsFusdc}
+                        foodUsdcPrice={this.props.foodUsdcPrice}
+                        fusdcBalanceFusdcUsdcLP={this.props.fusdcBalanceFusdcUsdcLP}
+                        usdcBalanceFusdcUsdcLP={this.props.usdcBalanceFusdcUsdcLP} />
             case 2:
                 return <FethStats
                         nextRebase={this.state.nextRebase}
-                        fethPeg={this.props.fethPeg} />
+                        foodEthPrice={this.props.foodEthPrice}
+                        rewardsFeth={this.props.rewardsFeth}
+                        ethBalanceFethEthLP={this.props.ethBalanceFethEthLP}
+                        fethBalanceLPinEth={this.props.fethBalanceLPinEth} />
         }
     }
 
